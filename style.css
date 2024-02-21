@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+}
+
+.top {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    background-image: url(./images/Vector\ 1.png);
+    background-repeat: no-repeat;
+    height: 971.33px;
+    /*top: -296.34px;
+    left: -42.38px;*/
+}
+
+.top img {
+    padding-top: 20px;
+}
+
+
+.top .panels {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 41px;
+}
+
+.top .panels a {
+    color: white;
+    font-family: Proxima Nova;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.top .panels a:hover {
+    text-decoration: underline;
+
+}
+
+
+.top .buttons {
+    padding-top: 30px;  
+    column-gap: 40px;
+    margin-right: 100px;
+}
+
+.top .buttons .sup {
+    padding: 12px 40px 12px 40px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.top .buttons .sup:hover {
+    color: blueviolet;
+    transition: 1s;
+}
+
+.top .buttons .sup:active {
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+
+.top .buttons .sign {
+    padding: 12px 40px 12px 40px;
+    border: none;
+    border-radius: 96px;
+    background-color: gold;
+    color: white;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.top .buttons .sign:hover {
+    color: rgb(70, 255, 24);
+    transition: 1s;
+}
+
+.top .buttons .sign:active {
+    color: blueviolet;
+    border: 1px solid white;
+    transition: 1s;
+}
+
+.humburger{
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        background: linear-gradient(99.22deg, #5C0E62 24.96%, #00B5D0 92.23%);
+        background-repeat:no-repeat ;
+
+    }
+    .top .panels {
+        background-image: none;
+        display: none;
+    }
+
+    .top .buttons {
+        display: none;
+    }
+  }
+  
+@media (max-width:  800px) {
+    .top .icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 30px;
+        width: 100%;
+    }
+    .top .logo{
+        width: 100px;
+        height: 50px;
+    }
+    .humburger{
+        display: block;
+        width: 15px;
+        height: 30px;
+    }
+}
+
+
+.main {
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 260px;
+    height: 100vh;
+}
+
+.main .content {
+    margin-left: 210px;
+    z-index: 99;
+
+}
+
+.main .content .get {
+    font-family: Proxima Nova;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    width: 390px;
+}
+
+.main .content .help {
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-top: 20px;
+    width: 420px;
+}
+
+.main .content .start {
+    margin-top: 20px;
+    padding: 15px 60px 15px 60px;
+    border: none;
+    border-radius: 5px;
+    background-color:#798AC9;
+    color: white;
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main .content .start:active {
+    color: red;
+}
+
+.main .images {
+    position: absolute;
+    width: 700px;
+    height: 1300px;
+}
+
+.main .images .img1 {
+    position: absolute;
+    width: 881.63px;
+    height: 661.8px;
+    top: 360.81px;
+    left: 521.21px;
+
+
+}
+
+.main .images .img2 {
+    position: absolute;
+    width: 1222.83px;
+    height: 688.13px;
+    top: 367.68px;
+    left: 313.97px;
+
+}
+
+.main .content .start:hover {
+    background-color: transparent;
+    color: blueviolet;
+}
+
+
+
+@media (max-width: 800px) {
+    .main {
+        position: relative;
+    }
+
+    .main .content {
+        position: absolute;
+        display: block;
+        width: 800px;
+        height: 210px;
+        bottom: 1250px;
+        left: -190px;
+        right: -950px;
+        height: 100px;
+        padding: 0 100px 0 100px;
+    }
+
+    .main .content .get {
+        padding-left: 1px;
+        padding-right: 10px;
+        margin-left:-90px;
+    }
+
+    .main .content .help {
+        padding-left: 1px;
+        padding-right: 90px;
+        margin-left:-90px;
+    }
+
+    .main .content .start {
+        position: absolute;
+        top: 300px;
+        right: 560px;
+        width:230px;
+        height: 50px;
+        top: 285.88px;
+    }
+
+    .main .images {
+        display: none;
+    }
+
+    .main .content .phonelogo {
+        display: flex;
+    }
+} 
+
+@media (max-width: 800px) {
+    .phonelogo {
+        display: flex;
+
+    }
+}
+
+    .phonelogo{
+        display: 
+    }
